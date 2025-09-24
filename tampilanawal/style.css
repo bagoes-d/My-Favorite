@@ -1,0 +1,309 @@
+:root {
+  --utama: #ff4d6d;   /* pink romantis */
+  --aksen: #ffd166;   /* emas lembut */
+  --bg: #fff0f5;
+  --putih: #fff;
+  --teks: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--teks);
+  line-height: 1.6;
+}
+
+/* ===================== */
+/*        NAVBAR         */
+/* ===================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--utama);
+  color: var(--putih);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--aksen);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: var(--putih);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--aksen);
+}
+
+/* ===================== */
+/*         HERO          */
+/* ===================== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, var(--utama), #c9184a);
+  color: var(--putih);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.logo-hero {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--aksen);
+  height: 30px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--putih);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
+}
+
+/* ===================== */
+/*       MAIN + SEC      */
+/* ===================== */
+main {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+section {
+  background: var(--putih);
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: var(--utama);
+  margin-bottom: 20px;
+  border-left: 6px solid var(--aksen);
+  padding-left: 12px;
+}
+
+/* ========================= */
+/*  FOTO PROFIL PASANGAN     */
+/* ========================= */
+.profil-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;          /* jarak antar kartu */
+  flex-wrap: wrap;    /* biar responsif */
+  margin-top: 20px;
+}
+
+.couple-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.couple-card:hover {
+  transform: translateY(-8px); /* efek naik dikit pas hover */
+}
+
+.profil-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;      /* biar gambar pas, gak gepeng */
+  border-radius: 50%;     /* bulat */
+  border: 5px solid #ff8fab; /* border pink soft */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+
+
+/* Galeri (Card Style) */
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.galeri-card {
+  background: var(--putih);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.galeri-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.galeri-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.galeri-card h4 {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: var(--utama);
+}
+
+/* ===================== */
+/*         MOTTO         */
+/* ===================== */
+blockquote {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #444;
+  position: relative;
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: #fff0f6;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.quote-mark {
+  font-size: 2rem;
+  color: var(--utama);
+  font-weight: bold;
+}
+
+/* ===================== */
+/*        FOOTER         */
+/* ===================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffe5ec;
+  border-top: 3px solid var(--utama);
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ===================== */
+/*     SCROLL REVEAL     */
+/* ===================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================== */
+/*      LIGHTBOX         */
+/* ===================== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px; 
+  right: 30px;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox-content {
+  display: flex;              /* biar rapih */
+  flex-direction: column;     /* susun gambar + teks ke bawah */
+  align-items: center;        /* rata tengah */
+  text-align: center;
+  color: #fff;
+  max-width: 90%;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;           /* gambar besar sampai 80% layar */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+#lightbox-caption {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-style: italic;
+  max-width: 80%;
+  line-height: 1.5;
+  opacity: 0;                  /* awalnya sembunyi */
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.3s;       /* muncul setelah gambar */
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
