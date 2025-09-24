@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kisah Kita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">💞 Kisah Kita</div>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#profil">Data Diri</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="beranda" class="hero">
+    <div class="hero-content">
+      <h1>Selamat Datang di Cerita Kita</h1>
+      <p id="typing"></p>
+      <a href="#profil" class="scroll-down">⬇</a>
+    </div>
+  </header>
+
+  <!-- Data Diri -->
+<section id="profil" class="reveal">
+  <h2>💖 Data Diri Pasangan</h2>
+  <div class="profil-container">
+    <div class="card couple-card">
+      <img src="foto/datadiribagoes.jpg" alt="Foto Aku" class="profil-img">
+      <h3>Bagoes Wahyu Untoro</h3>
+      <p>Umur: 19</p>
+      <p>Hobi: Bermain Bola</p>
+    </div>
+    <div class="card couple-card">
+      <img src="foto/datadiridella.jpg" alt="Foto Dia" class="profil-img">
+      <h3>Della Putri Handayani</h3>
+      <p>Umur: 19</p>
+      <p>Hobi: Drakor</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Galeri -->
+<section id="galeri" class="reveal">
+  <h2>📷 Foto Kenangan Kita</h2>
+  <div class="galeri-grid">
+    <div class="galeri-card">
+      <img src="foto/kenangan1.jpg" alt="Kenangan 1" onclick="openLightbox(this, 'Waktu pertama kali jalan bareng ❤️')">
+      <h4>Kenangan 1</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan2.jpg" alt="Kenangan 2" onclick="openLightbox(this, 'Waktu Zaman SMK dulu 📚')">
+      <h4>Kenangan 2</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan3.jpg" alt="Kenangan 3" onclick="openLightbox(this, 'Momen ulang tahunmu 🎂')">
+      <h4>Kenangan 3</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan4.jpg" alt="Kenangan 4" onclick="openLightbox(this, 'Foto random tapi penuh kenangan 😍')">
+      <h4>Kenangan 4</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="Foto Kenangan">
+    <p id="lightbox-caption"></p>
+  </div>
+</div>
+
+
+
+<!-- Motto -->
+<section id="motto" class="reveal">
+  <h2>🌹 Motto</h2>
+  <blockquote>
+    <span class="quote-mark">“</span>
+    Bersama kita tumbuh, bersama kita bahagia.
+    <span class="quote-mark">”</span>
+  </blockquote>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kisah Kita. Dibuat dengan ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
