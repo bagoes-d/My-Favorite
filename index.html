@@ -11,15 +11,18 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-logo">💞 Kisah Kita</div>
-    <ul>
+    <!-- Tombol hamburger -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul id="nav-menu" >
       <li><a href="#beranda">Beranda</a></li>
       <li><a href="#profil">Data Diri</a></li>
       <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#motto">Motto</a></li>
     </ul>
   </nav>
 
   <!-- Hero -->
-  <header id="beranda" class="hero">
+  <header id="beranda" class="hero reveal fade-top">
     <div class="hero-content">
       <h1>Selamat Datang di Cerita Kita</h1>
       <p id="typing"></p>
@@ -28,7 +31,7 @@
   </header>
 
   <!-- Data Diri -->
-<section id="profil" class="reveal">
+<section id="profil" class="reveal fade-bootom">
   <h2>💖 Data Diri Pasangan</h2>
   <div class="profil-container">
     <div class="card couple-card">
@@ -48,7 +51,7 @@
 
 
 <!-- Galeri -->
-<section id="galeri" class="reveal">
+<section id="galeri" class="reveal zoom-in">
   <h2>📷 Foto Kenangan Kita</h2>
   <div class="galeri-grid">
     <div class="galeri-card">
@@ -64,8 +67,44 @@
       <h4>Kenangan 3</h4>
     </div>
     <div class="galeri-card">
-      <img src="foto/kenangan4.jpg" alt="Kenangan 4" onclick="openLightbox(this, 'Foto random tapi penuh kenangan 😍')">
+      <img src="foto/kenangan4.jpg" alt="Kenangan 4" onclick="openLightbox(this, 'Momen pertama kondangan kita 👗')">
       <h4>Kenangan 4</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan5.jpg" alt="Kenangan 5" onclick="openLightbox(this, 'Foto pertama nyoba seafood bareng 🦞')">
+      <h4>Kenangan 5</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan6.jpg" alt="Kenangan 6" onclick="openLightbox(this, 'Pertama kali nyoba ramen bareng 🍜')">
+      <h4>Kenangan 6</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan7.jpg" alt="Kenangan 7" onclick="openLightbox(this, 'Makan bareng gacoan kita 🍽️')">
+      <h4>Kenangan 7</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan8.jpg" alt="Kenangan 8" onclick="openLightbox(this, 'Pertama kali makan solaria bareng 🍽️')">
+      <h4>Kenangan 8</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan9.jpg" alt="Kenangan 9" onclick="openLightbox(this, 'Pthoto booth & kopi kenangan 📸☕')">
+      <h4>Kenangan 9</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan10.jpg" alt="Kenangan 10" onclick="openLightbox(this, 'Foto random kita berdua 😊')">
+      <h4>Kenangan 10</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan11.jpg" alt="Kenangan 11" onclick="openLightbox(this, 'Foto Selsai Upacara 17 Agustus ')">
+      <h4>Kenangan 11</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan12.jpg" alt="Kenangan 12" onclick="openLightbox(this, 'Acara kondangan kita 👗')">
+      <h4>Kenangan 12</h4>
+    </div>
+    <div class="galeri-card">
+      <img src="foto/kenangan13.jpg" alt="Kenangan 13" onclick="openLightbox(this, 'Makan bareng mekdi kita 🍽️')">
+      <h4>Kenangan 13</h4>
     </div>
   </div>
 </section>
@@ -82,7 +121,7 @@
 
 
 <!-- Motto -->
-<section id="motto" class="reveal">
+<section id="motto" class="reveal scale-up">
   <h2>🌹 Motto</h2>
   <blockquote>
     <span class="quote-mark">“</span>
